@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashBoardActivity"
+    android:background="#dfdfdf">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      <android.support.v7.widget.Toolbar
+          android:id="@+id/toolbar_nav"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="#FFFF"
+          android:elevation="10dp"
+          app:title="DASHBOARD"
+          app:titleMarginStart="40dp"
+          app:titleTextColor="#079d85"
+          android:minHeight="?attr/actionBarSize"
+          android:layout_marginBottom="10dp"
+          >
+
+      </android.support.v7.widget.Toolbar>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:padding="20dp">
+      <LinearLayout
+
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="10dp"
+          android:background="@drawable/shape_background_login_input"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginBottom="25dp"
+          android:elevation="5dp">
+
+          <ImageView
+              android:layout_width="100dp"
+              android:layout_height="60dp"
+              android:src="@drawable/bank"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Bank Management"
+              android:textSize="16dp"
+              android:layout_gravity="center"
+              android:textColor="#079D85"
+              android:textStyle="bold"
+              android:padding="6dp"
+              android:id="@+id/bank_management"
+
+              />
+      </LinearLayout>
+      <LinearLayout
+
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="10dp"
+          android:background="@drawable/shape_background_login_input"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginBottom="25dp"
+          android:elevation="5dp"
+          >
+
+          <ImageView
+              android:layout_width="100dp"
+              android:layout_height="60dp"
+              android:src="@drawable/transaction"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Make Transaction"
+              android:textSize="16dp"
+              android:layout_gravity="center"
+              android:textColor="#079D85"
+              android:textStyle="bold"
+              android:padding="6dp"
+              android:id="@+id/make_transaction"
+
+              />
+      </LinearLayout>
+      <LinearLayout
+
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="10dp"
+          android:background="@drawable/shape_background_login_input"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginBottom="25dp"
+          android:elevation="5dp">
+
+          <ImageView
+              android:layout_width="100dp"
+              android:layout_height="60dp"
+              android:src="@drawable/reports"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Reports &amp; Statements"
+              android:textSize="16dp"
+              android:layout_gravity="center"
+              android:textColor="#079D85"
+              android:textStyle="bold"
+              android:padding="6dp"
+              android:id="@+id/reports"
+
+              />
+      </LinearLayout>
+      <LinearLayout
+
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="10dp"
+          android:background="@drawable/shape_background_login_input"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginBottom="40dp"
+          android:elevation="5dp">
+
+          <ImageView
+              android:layout_width="100dp"
+              android:layout_height="60dp"
+              android:src="@drawable/settings"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Settings"
+              android:textSize="16dp"
+              android:layout_gravity="center"
+              android:textColor="#079D85"
+              android:textStyle="bold"
+              android:padding="6dp"
+              android:id="@+id/sett_ing"
+
+              />
+      </LinearLayout>
+      </LinearLayout>
+
+  </LinearLayout>
+   <android.support.design.widget.NavigationView
+       android:id="@+id/navigationView"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_gravity="start"
+       app:menu="@menu/nav_menu"
+       app:itemTextColor="#0a582a"
+       android:padding="2dp"
+       android:background="@drawable/navigation_shape"
+       >
+
+   </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sagar.com.sagarrayamajhi">
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Bank Assistant"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:screenOrientation="portrait">
+        <activity android:name="sagar.com.sagarrayamajhi.LoginActivity">
+
+        </activity>
+        <activity android:name="sagar.com.sagarrayamajhi.DashBoardActivity"
+            ></activity>
+        <activity android:name="sagar.com.sagarrayamajhi.SettingsActivity" />
+        <activity android:name="sagar.com.sagarrayamajhi.AddBankActivity" />
+        <activity android:name="sagar.com.sagarrayamajhi.AddTransactionActivity" />
+        <activity android:name="sagar.com.sagarrayamajhi.ReportsActivity" />
+        <activity android:name="sagar.com.sagarrayamajhi.ViewTranscationActivity" />
+        <activity android:name="sagar.com.sagarrayamajhi.BankManagementActivity" />
+        <activity android:name="sagar.com.sagarrayamajhi.RegistrationActivity"> <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+    </application>
+
+</manifest>

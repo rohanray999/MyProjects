@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prabhu Bank"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:id="@+id/reports_bankName"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Dr. 1,20,000"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:id="@+id/reportsDebit"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Cr. 1,20,000"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:id="@+id/reportsCredit"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="3dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status:  Active"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:id="@+id/reoprtsStatus"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balane: 1,20,000"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:id="@+id/balanceReports"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
